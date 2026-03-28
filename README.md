@@ -9,6 +9,9 @@ EJEMPLO:
       PASO 1 :
       *Ubicamos en la ruta de nuestro proyecto y escribirmos: 
       C:\USERS\USUARIO\DESKTOP\PROYECTO> GITB
+      
+      
+      
       PASO 2: 
       Pulsamos ENTER y el resultado final sera git bash abierto en la ruta : C:\USERS\USUARIO\DESKTOP\PROYECTO
       
