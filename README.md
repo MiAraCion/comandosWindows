@@ -1,47 +1,141 @@
- Para el funcionamiento correcto de los comandos se debe configurar las variables de entorno y tener instalado el programa correspondiente.
+# MyCommands
 
-===========================================================================
-PARA EL EJECUTABLE "gitb" 
-===========================================================================
-FUNCION: en consola o cmd escribir ("gitb" + Enter) y poder abrir git bash en la ruta actual.
+Colección de comandos personalizados para Windows mediante archivos `.bat`.
 
-EJEMPLO: 
+> Para el funcionamiento correcto de los comandos, se deben configurar las variables de entorno y tener instalado el programa correspondiente.
 
-      PASO 1 :
-      *Ubicamos en la ruta de nuestro proyecto y escribirmos: 
-      C:\USERS\USUARIO\DESKTOP\PROYECTO> GITB
-                 
-      PASO 2: 
-      Pulsamos ENTER y el resultado final sera git bash abierto en la ruta : C:\USERS\USUARIO\DESKTOP\PROYECTO
-      
-      PASO3: configurar la ruta C:\MyCommands en variables de entorno de windows.
+---
 
-      
-===========================================================================
-PARA EL EJECUTABLE "npm" 
-===========================================================================
-FUNCION: reemplazar npm por pnpm, es decir cuando por error ejecutes npm al mommento de instalar dependencias en un proyecto de react, angular o vue, este .bat reemplazara npm por pnpm, para una instalacion de dependencias mas segura.
+# Comando `gitb`
 
-EJEMPLO:
-      PASO 1: 
-      *Ejecutamos npm -v en la consola de comandos 
-      C:\USERS\USUARIO\DESKTOP\PROYECTO> npm -v
-            11.1.1
-      PASO 2:
-      *Ejecutamos pnpm -v en la consola de comandos 
-      C:\USERS\USUARIO\DESKTOP\PROYECTO> pnpm -v
-            11.11.1
-      
-      Observacion: Podemos ver que npm y pnpm son comandos distintos, por esa razon nos devuelven distintas versiones al ejecutar (pnpm -v y npm -v)
+## Función
 
-      PASO 3: cargamos el archivo npm.bat en la carpeta donde almacenamos los scripts. (en mi caso C:\MyCommands\)
+Permite abrir **Git Bash** directamente en la ruta actual desde CMD o PowerShell.
 
-      PASO 4: configurar la ruta C:\MyCommands en variables de entorno de windows.
+---
 
-      PASO 5: Volvemos a ejecutar npm -v y pnpm -v en la consola de comandos y deveria devolver la version de pnpm
+## Ejemplo de uso
 
-      C:\USERS\USUARIO\DESKTOP\PROYECTO> npm -v
-            11.11.1
-            
-      C:\USERS\USUARIO\DESKTOP\PROYECTO> pnpm -v
-            11.11.1
+### Paso 1
+
+Ubicarse en la carpeta del proyecto y ejecutar:
+
+```bash
+C:\Users\Usuario\Desktop\Proyecto> gitb
+```
+
+### Paso 2
+
+Presionar `ENTER`.
+
+Resultado esperado:
+
+- Git Bash se abrirá automáticamente en:
+
+```bash
+C:\Users\Usuario\Desktop\Proyecto
+```
+
+### Paso 3
+
+Agregar la carpeta donde están almacenados los scripts a las variables de entorno de Windows.
+
+Ejemplo:
+
+```bash
+C:\MyCommands
+```
+
+---
+
+# Comando `npm`
+
+## Función
+
+Reemplazar automáticamente `npm` por `pnpm`.
+
+Esto permite que, al ejecutar accidentalmente comandos con `npm`, realmente se utilice `pnpm` para una instalación de dependencias más segura y eficiente.
+
+---
+
+## Ejemplo de uso
+
+### Paso 1
+
+Verificar la versión original de `npm`:
+
+```bash
+C:\Users\Usuario\Desktop\Proyecto> npm -v
+11.1.1
+```
+
+### Paso 2
+
+Verificar la versión de `pnpm`:
+
+```bash
+C:\Users\Usuario\Desktop\Proyecto> pnpm -v
+11.11.1
+```
+
+> Observación: `npm` y `pnpm` son comandos distintos, por eso muestran versiones diferentes.
+
+### Paso 3
+
+Copiar el archivo `npm.bat` dentro de la carpeta donde almacenas tus scripts personalizados.
+
+Ejemplo:
+
+```bash
+C:\MyCommands
+```
+
+### Paso 4
+
+Agregar esa carpeta a las variables de entorno de Windows.
+
+### Paso 5
+
+Cerrar y volver a abrir la terminal.
+
+Ahora, al ejecutar:
+
+```bash
+npm -v
+```
+
+El resultado debería ser la versión de `pnpm`:
+
+```bash
+11.11.1
+```
+
+Y al ejecutar:
+
+```bash
+pnpm -v
+```
+
+También debería devolver:
+
+```bash
+11.11.1
+```
+
+---
+
+# Configuración de Variables de Entorno
+
+Agregar la carpeta de scripts personalizados al `PATH` de Windows.
+
+Ejemplo:
+
+```bash
+C:\MyCommands
+```
+
+Ruta recomendada para almacenar los `.bat`:
+
+```bash
+C:\MyCommands
+```
